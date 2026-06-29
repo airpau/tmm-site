@@ -119,7 +119,13 @@ header.nav{position:sticky;top:0;z-index:60;background:rgba(11,11,12,.86);backdr
 /* About */
 .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
 .about p{color:#cfcfd3;font-size:16px}
-.about .van{border-radius:18px;overflow:hidden;border:1px solid #26262b}
+.about-panel{background:linear-gradient(180deg,#141416,#0d0d0f);border:1px solid #26262b;border-radius:18px;padding:28px}
+.about-panel .ap-row{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:20px}
+.about-panel .stat{background:#0c0c0e;border:1px solid #232327;border-radius:12px;padding:16px}
+.about-panel .stat b{font-family:Sora;font-weight:700;font-size:23px;color:var(--yellow);display:block}
+.about-panel .stat span{font-size:12.5px;color:var(--muted)}
+.about-panel blockquote{margin:0;border-left:3px solid var(--yellow);padding:4px 0 4px 16px;color:#d8d8dc;font-size:14.5px;font-style:italic}
+.about-panel blockquote cite{display:block;margin-top:8px;color:var(--muted);font-style:normal;font-size:12.5px}
 .tags{display:flex;flex-wrap:wrap;gap:10px;margin:22px 0}
 .tag{background:#161619;border:1px solid #2a2a2e;border-radius:999px;padding:8px 14px;font-size:13px;color:#d6d6da}
 .tag b{color:var(--yellow)}
@@ -245,7 +251,7 @@ footer{background:#08080a;border-top:1px solid #18181b;padding:54px 0 30px}
   <div class="wrap hero-split">
     <div class="hero-text">
       <span class="eyebrow">Mobile mechanic · Glasgow</span>
-      <h1><span class="nm">The Moving Mechanic</span> brings the garage <span class="yellow">to you.</span></h1>
+      <h1><span class="nm">The Moving Mechanic</span><br>brings the garage<br><span class="yellow">to you.</span></h1>
       <p class="sub">Expert repairs at your door — home, work or roadside. No tow truck, no wasted day. Just a skilled mechanic on site, getting you moving again.</p>
       <div class="hero-cta">
         <a class="btn btn-yellow" href="tel:07731390500">
@@ -368,8 +374,14 @@ footer{background:#08080a;border-top:1px solid #18181b;padding:54px 0 30px}
       </div>
       <a class="btn btn-yellow" href="#book">Book a visit →</a>
     </div>
-    <div class="van">
-      <img src="https://lh3.googleusercontent.com/place-photos/AJRVUZOVXcTZ6tMEqaaAOnVWLujBC2sQiLstzbbfseuIv-YUY5Sa89EDAknX9ohTp4puQjxwubw4fu6Gb29BD9Fs-1P1G0hBN5hj07ytZQpLYJ7co_a7yFfS92M5P8QQ5NlI_9vCakMaSeqZJyxSmhVtNGPv=s1600-w1254" alt="The Moving Mechanic van">
+    <div class="about-panel">
+      <div class="ap-row">
+        <div class="stat"><b>4.5★</b><span>81 Google reviews</span></div>
+        <div class="stat"><b>Same day</b><span>typical callout</span></div>
+        <div class="stat"><b>All makes</b><span>cars &amp; light vans</span></div>
+        <div class="stat"><b>£0</b><span>callout fee</span></div>
+      </div>
+      <blockquote>“These guys are lifesavers!! They got me pulled over and sorted on the motorway in no time. Highly recommend these legends.”<cite>— Leah Francis, Google review</cite></blockquote>
     </div>
   </div>
 </section>
